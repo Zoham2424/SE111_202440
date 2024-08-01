@@ -23,9 +23,13 @@
     
         }
         #nav{
-            background-color: rgb(18, 122, 122);
+            text-align: center;
+            border:none;
+ 
+            width: 535px;
+            /*to use margin auto first set width*/
+            margin:auto;
         }
-    
         .bg{
             background-color: rgb(116, 46, 46);
             color: white;
@@ -39,6 +43,8 @@
         }
         .remove{
             list-style-type: none;
+            text-align: center;
+            width: 250;
         }
     </style>
 
@@ -51,7 +57,7 @@
             <h2 class="title">Multi Page Demo</h2>
             <br>
         </div>
-            <div id="Nav" >  <!--Navegation -->
+            <div id="nav" >  <!--Navegation -->
                 <!--Start of navegation button--> 
                 <nav style="font-size: x-large;">
                     <!--Nav ID bio, schooling, hoobies, footer -->
@@ -67,11 +73,11 @@
             <!--Order List of schools-->
             <ul class="list">
                 <!--Schools with logos-->
-                <li> New England Institute of Technology</li>
+                <li class="title"> New England Institute of Technology</li>
                 <li class="remove"><img src="images/NEIT_Logo.jpg" alt="New England  Tech Logo" width="100"></li>
-                <li> Community College Of Rhode Island</li>
+                <li class="title"> Community College Of Rhode Island</li>
                 <li class="remove"><img src="images/CCRI_Logo.png" alt="Community College of Rhode Island Logo" width="100"></li>
-                <li>  Cranston High School East</li>
+                <li class="title">  Cranston High School East</li>
                 <li class="remove"><img src="images/CHSE_Logo.png" alt="Cranston High School East Logo" width="100"></li>
             </ul>
         </header>
