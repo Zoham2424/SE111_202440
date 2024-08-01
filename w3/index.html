@@ -8,26 +8,42 @@
     <!--Change the author to your name-->
     <meta name="author" content="Ian Alvarado">
     <title>W3 Assignment</title>
+
+<!--In document style tag-->
+<style>
+    /*in here write css*/
+    div {
+        /*All div elements this page will take the following styling*/
+        border:1px solid black;
+        padding: 10px; /*add space between element content and border*/
+        margin:10px;    /*adds space between border */
+    }
+
+</style>
+
 </head>
 <body >
-    <div id="wrapper" Style="border:2px solid red;"> <!--Wrapp information-->
-        <div id="header" class="bg"style="border:2px solid green;">
+    <div id="wrapper"> <!--Wrapp information-->
+        <div id="header" class="bg">
 
             <h1>Ian Alvarado Home page</h1>
             <h2>Multi Page Demo</h2>
             <br>
         </div>
-    <div style="border:2px solid green;">
+    <div >
         <div id="Nav" >  <!--Navegation -->
             <!--Start of navegation button--> 
+            <div id="buttons"> 
             <nav style="font-size: x-large;">
                 <!--Nav ID bio, schooling, hoobies, footer -->
                   <a href="index.html">Home</a> | <a href="hobbies.html">Hobbies</a> | <a href="schools.html">Schooling</a>
              </nav>
+        </div>
     </div>
     <hr>
-    <div style="border:2px solid green;">
+    <div >
         <div id="Main-content" >
+            <h2 class="fancy"> 
             <p style="font-size: large; font-family: sans-serif;  ">
                 <i><b>My names is Ian Alvarado, I was born and raised in Costa Rica, I moved to the United Stated when I was 16.
                     I live in Cranston, Rhode Island.I believe AI is going to take my job in the near future.
@@ -35,13 +51,14 @@
             </p>
         <!--Image fav character :)-->
         <img src="images/Sylvanas-Windrunner.jpg" alt="Sylvanas-Windrunner" width="700" >
-
+    </div>
 
     </div>
     <hr>
-    <div id="footer" class="bg" Style="border:2px solid green;"> <!--Footer-->
+    <div id="footer" class="bg"> <!--Footer-->
         <p>&copy; I ALVARADO | SE111 | 202440</p>
     </div> <!-- close Footer-->
+    <!--Make sure to include a valiation screenshot-->
 </div>
 </body>
 </html>
