@@ -27,14 +27,19 @@
         }
     
         .bg{
-            background-color: black;
+            background-color: rgb(116, 46, 46);
             color: white;
         }
         .title{
             text-align: center;
             font-size: xx-large;
         }
-
+        .list{
+            font-size: x-large;
+        }
+        .remove{
+            list-style-type: none;
+        }
     </style>
 
 </head>
@@ -53,19 +58,22 @@
                       <a href="index.html">Home</a> | <a href="hobbies.html">Hobbies</a> | <a href="schools.html">Schooling</a>
                  </nav>
         </div>
-    <div id="Main-content" >
-        <!--Division by the hr rule -->
+                <!--Division by the hr rule -->
         <hr>
+    <div id="Main-content" >
         <!-- Third header Schooling-->
         <header id="Schooling">
             <h2 class="title">SCHOOLINGS</h2>
             <!--Order List of schools-->
-            <ol style="font-family:'Times New Roman', Times, serif; font-size: large;font-style: italic; font-size: x-large;">
+            <ul class="list">
                 <!--Schools with logos-->
-                <b><li> New England Institute of Technology</li><img src="images/NEIT_Logo.jpg"alt="New England  Tech Logo" width="100">
-                <li> Community College Of Rhode Island</li><img src="images/CCRI_Logo.png"alt="Community College of Rhode Island Logo" width="100">
-                <li>  Cranston High School East</li><img src="images/CHSE_Logo.png"alt="Cranston High School East Logo" width="100"></b>
-            </ol>
+                <li> New England Institute of Technology</li>
+                <li class="remove"><img src="images/NEIT_Logo.jpg" alt="New England  Tech Logo" width="100"></li>
+                <li> Community College Of Rhode Island</li>
+                <li class="remove"><img src="images/CCRI_Logo.png" alt="Community College of Rhode Island Logo" width="100"></li>
+                <li>  Cranston High School East</li>
+                <li class="remove"><img src="images/CHSE_Logo.png" alt="Cranston High School East Logo" width="100"></li>
+            </ul>
         </header>
     </div>
 

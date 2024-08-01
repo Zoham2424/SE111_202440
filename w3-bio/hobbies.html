@@ -19,11 +19,18 @@
         #wrapper {
             width: 980px;
             margin:auto; /*Mus have a width set; centers elements */
-            background-color:palegoldenrod;
+            background-color:rgb(121, 6, 111);
     
         }
         #nav{
             background-color: paleturquoise;
+            border:none;
+            padding: none;
+        }
+        #main-content{
+            text-align: center;
+            margin-right: 25px;
+            font-size: 24px;
         }
     
         .bg{
@@ -33,6 +40,12 @@
         .title{
             text-align: center;
             font-size: xx-large;
+        }
+        .list{
+            font-size: x-large;
+        }
+        .remove{
+            list-style-type: none;
         }
 
     </style>
@@ -45,7 +58,6 @@
             <h2 class="title">Multi Page Demo</h2>
             <br>
         </div>
-    <hr>
         <div id="Nav" >  <!--Navegation -->
             <!--Start of navegation button--> 
             <nav style="font-size: x-large;">
@@ -59,11 +71,15 @@
     <header id="Hobbies">
         <h3 class="title">Hobbies</h3>
         <!--Unordered list-->
-        <ul style="font-size: large;font-family:Verdana, Geneva, Tahoma, sans-serif;">
+        <ul >
             <!--Item List-->
-            <li>Soccer <img src="images/Soccer.jpg"alt="Soccer-Ball" width="200"></li>
-            <li>Video Games <img src="images/Elden_Ring.png" alt="Elden_Ring" width="200"></li>
-            <li>Google Stuff <a href="https://www.google.com/" alt="Google" width="200">Try Google yourself<img src="images/Google.png" alt="Google" width="150"></a></li>
+            <li>Soccer </li>
+            <li class="remove"><img src="images/Soccer.jpg"alt="Soccer-Ball" width="200"></li>
+            <li>Video Games </li>
+            <li class="remove"><img src="images/Elden_Ring.png" alt="Elden_Ring" width="200"></li>
+            <li>Google Stuff</li>
+            <li class="remove"><img src="images/Google.png" alt="Google" width="150"></li>
+            <li><a href="https://www.google.com/" alt="Google" width="200">Try Google yourself</a></li>
         </ul>
     </header>
     </div>
