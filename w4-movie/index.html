@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Index page file">
+    <!--Change the author to your name-->
+    <meta name="author" content="Ian Alvarado">
+
+    <title>I Am Legend</title> <!--Tittle of the Page-->
+    <!--css style-->
+    <style>                     
+        .title{
+            text-align: center;
+            font-size: xx-large;
+            font-weight: bold;
+        }
+        .labels{
+            font-weight: bold;
+        }
+        .info{
+            font-weight: normal;
+        }
+        #nav{
+            text-align: center;
+            border:none;
+            font-size: x-large;
+            width: 535px;
+            /*to use margin auto first set width*/
+            margin:auto;
+            
+        }
+        #container{
+            background-color: rgb(43, 117, 117);
+        }
+        #main-content{
+            text-align: center;
+            margin-right: 25px;
+            font-size: 24px;
+        }
+        #content{
+            font-size: 24px;
+        }
+        #footer{
+            font-size: 24px;
+        }
+        .bg{
+            background-color: rgb(146, 58, 58);
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container" >    <!--Div container-->
+        <hr>                <!--Horizontal rule-->
+        <div id="header" class="bg">       <!--Div header-->
+            <h1 class="title">I Am Legend</h1>   <!--H1 Title; Class title-->
+        </div>      <!--End Of div header-->
+        <div id="nav">  <!--Div Navegation bar-->
+            <a href="index.html">Home</a> | <a href="cast.html">Cast</a> | <a href="review.html">Review</a>         <!--REference to index, cast, review -->
+        </div>  <!--End of div nav-->
+        <hr>    <!--Horizontal rule-->
+        <div id="Main-content">     <!--Main Content Div-->
+            <h2 class="title">Home</h2>      <!--H2 Title, Class title-->
+            <div id="content">          <!--Div content-->
+                                <!--Synopsys-->
+                <p>Robert Neville, a scientist, is a survivor of a man-made plague that transforms humans into mutants;                  
+                 he wanders alone through New York City, calling out for other possible survivors, and works on finding a cure 
+                 for the plague using his own immune blood; Neville knows he is badly outnumbered and the odds are against him; 
+                 the infected wait for him to make a mistake that will deliver Neville into their hands.</p>
+
+                 <img src="images/Poster_IAmLegend.jpg" alt="I am Legend" width="2000">  <!--Image poster-->
+                </div>                  <!--Close Div content-->
+            <div id="information" >         <!--Div information-->
+                <ol>
+                    <li class="labels">Company Credits: <span class="info"> Warner Bros</span></li>
+                    <li class="labels">Release Date: <span class="info"> December 14, 2007 </span></li>
+                    <li class="labels">Genres: <span class="info"> Horror, Action</span></li>
+                    <li class="labels">Rating: <span class="info"> 4.4 / 5 </span></li>
+                    <li class="labels">Running time: <span class="info"> 101 minutes </span></li>
+                </ol>
+            </div>                      <!--Close div info-->
+        </div>                      <!--Close main Content-->
+            <hr>                        <!--Horizontal rule-->
+            <div id="footer">           <!--Div footer-->
+                <p>&copy; I ALVARADO | SE111 | 202440</p>
+                <!--Validation Screenshot-->
+                <img src="images/Validation_Home.PNG" alt="Validation for home">
+                <a href="#header">Back to top</a>
+            </div>                      <!--Close Div footer-->
+    </div>                          <!--Close container-->
+</body>
+</html>
