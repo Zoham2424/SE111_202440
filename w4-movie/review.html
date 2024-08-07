@@ -16,12 +16,6 @@
             font-size: xx-large;
             font-weight: bold;
         }
-        .labels{
-            font-weight: bold;
-        }
-        .info{
-            font-weight: normal;
-        }
         #nav{
             text-align: center;
             border:none;
@@ -30,6 +24,9 @@
             /*to use margin auto first set width*/
             margin:auto;
             
+        }
+        .info{
+            font-size: x-large;
         }
         #container{
             background-color: rgb(43, 117, 117);
@@ -55,18 +52,36 @@
 <body>
     <div id="container">    <!--Div container-->
         <hr>                <!--Horizontal rule-->
-        <div id="header">       <!--Div header-->
-            <h1 class="">I Am Legend</h1>   <!--H1 Title; Class title-->
+        <div id="header" class="bg">       <!--Div header-->
+            <h1 class="title">I Am Legend</h1>   <!--H1 Title; Class title-->
         </div>      <!--End Of div header-->
         <div id="nav">  <!--Div Navegation bar-->
             <a href="index.html">Home</a> | <a href="cast.html">Cast</a> | <a href="review.html">Review</a>         <!--REference to index, cast, review -->
         </div>  <!--End of div nav-->
         <hr>    <!--Horizontal rule-->
         <div id="Main-content">     <!--Main Content Div-->
-            <h2 class="">Home</h2>      <!--H2 Title, Class title-->
+            <h2 class="title">Review</h2>      <!--H2 Title, Class title-->
             <div id="content">          <!--Div content-->
-
+                <p><b> Ian Alvarado </b><i>August 8, 2024</i></p>
+                <p>The movie I am legend is a post-apocalyptic movie, following the story of Dr.Robert Neville. In the movie we are able
+                    to see Robert surviving in an empty city during the day, at night hordes of zombies will lurk around. In I am legend Robert is
+                    looking for the cure for the virus. He has a companion Dog "Sam" that helps him travel the city looking for other humans, we can see him become desperate for 
+                    human connection to the point of alucinations. The turn point comes when Robert makes a mistake he does not comeback home before dark. He is save
+                    by Anna that is traveling with his son Ethan looking for a safe place. 
+                </p>
+                <p>My favorite actor by far is the dog, who was played by Abbey and Kona 2 amazing German Shepperd. 
+                    Everytime I see the movie I wish a dog like Sam
+                </p>
+                <a href="https://www.imdb.com/title/tt0480249/">Link to IMDB</a>
             </div>                      <!--Close div content-->
+            <div id="trivia">
+                <h3 class="title">Trivia</h3>
+                <ul>
+                    <li class="info"> Will Smith grew so enamored of his canine co-star, Abbey, that he tried to adopt her when filming was finished, but the dog's trainer could not be persuaded to give her up.</li>
+                    <li class="info"> When Dr. Robert Neville sees the mannequin he calls "Fred" outside on the street, it looks like the mannequin moves its head a little. During that scene, a mime replaced the mannequin to try and play with people's minds when they watched that scene.</li>
+                    <li class="info"> The trainer put a piece of tape on Abbey's paw to make her limp, after Sam gets injured fighting the infected dogs.</li>
+                </ul>
+            </div>
         </div>                      <!--Close main Content-->
             <hr>                        <!--Horizontal rule-->
             <div id="footer">           <!--Div footer-->
