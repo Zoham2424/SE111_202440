@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--The type of font we are using-->
+    <meta charset="UTF-8">
+    <!--Tells the -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ian Alvarado">
+    <meta name="description" content="Default HTML Page for SE 111">
+    
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <title>Week 5 | Tables and Forms</title>
+</head>
+<body>
+    <!--Build your Table and Form here-->
+    <div id="header">
+        <h1><b>Birthday Party Registration</b></h1>
+    </div>
+    <div id="table"> 
+        <form method="GET" action="confirm.html"> 
+            <table> 
+    <thead>
+            <tr>
+                <td><b>Labels</b></td>
+                <td><b>Form Fields</b></td>
+            </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td>
+                    <label for="gfirst">Parent/Guardian Name: 
+                    </label>
+                </td> 
+                <td><input type="text" name="gfirst" id="g-first" placeholder="First Name" maxlength="20" required><br>
+                <input type="text" name="gfirst" id="g-last" placeholder="Last Name" maxlength="20" required></td>
+            </tr>
+            <tr>
+                <td><label for="cfirst">Child's First Name</label></td> 
+                <td><input type="text" name="cfirst" id="c-first" placeholder="Child's FirstName" required></td>
+            </tr>
+            <tr>
+                <td><label for="age">Child's Age</label></td> 
+                <td><input type="number" name="age" value="3" required></td>
+            </tr>
+            <tr>
+                <td><b>Date and Time</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><label for="date">Date</label></td> 
+                <td><input type="date" name="date" required></td>
+            </tr>
+            <tr>
+                <td><label for="time">Start Time</label></td> 
+                <td><input type="time" name="time" required></td>
+            </tr>
+            <tr>
+                <td><label for="guests">Number Of Guest</label></td> 
+                <td><input type="number" name="guests" value="5"></td>
+            </tr>
+            <tr>
+                <td><b>Food</b></td> 
+                <td></td>
+            </tr>
+            <tr>
+                <td><label for="size">Size</label></td> 
+                <td><input type="radio" name="size" value="sm">sm 
+                    <input type="radio" name="size" value="md" >md
+                    <input type="radio" name="size" value="lg" >lg</td>
+            </tr>
+            <tr>
+                <td><Label for="drinks">Drinks</Label></td> 
+                <td>
+                <input type="checkbox" name="drink1" checked value="coke" ><label for="drink1">Coke</label><br>
+                <input type="checkbox" name="drink2"  value="sprite" ><label for="drink2">Sprite</label><br>
+                <input type="checkbox" name="drink3"  value="fruit punch" ><label for="drink3">Fruit Punch</label><br>
+                <input type="checkbox" name="drink4"  value="lemonade" ><label for="drink4">lemonade</label><br>
+                <input type="checkbox" name="drink5"  value="iced tea"><label for="drink5">Iced Tea</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="cake">Cake</Label></td> 
+                <td>
+                    <select name="cake">
+                        <option selected>Chocolate</option>
+                        <option >Vanilla</option>
+                        <option>I'll bring my own</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Decorations</b></td> 
+                <td></td>
+            </tr>
+            <tr>
+                <td><label for="colors">Color Scheme</Label></td> 
+                <td><input type="color" name="colors"></td>
+            </tr>
+            <tr>
+                <td><label for="comments">Additional Comments</Label></td> 
+                <td><textarea name="comments" placeholder="Please add any additional comments"></textarea></td>
+            </tr>
+            <tr>
+                <td></td> 
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+</table>
+</form>
+</div>
+<div id="footer"> <!--Footer-->
+    <p>&copy; I ALVARADO | SE111 | 202440</p>
+</div> <!-- close Footer-->
+</body>
+</html>
