@@ -32,16 +32,16 @@
                     <label for="gfirst">Parent/Guardian Name: 
                     </label>
                 </td> 
-                <td><input type="text" name="gfirst" id="g-first" placeholder="First Name" maxlength="20" required><br>
-                <input type="text" name="gfirst" id="g-last" placeholder="Last Name" maxlength="20" required></td>
+                <td><input type="text" name="gfirst" id="gfirst" placeholder="First Name" maxlength="20" required><br>
+                <input type="text" name="glast" id="glast" placeholder="Last Name" maxlength="20" required></td>
             </tr>
             <tr>
                 <td><label for="cfirst">Child's First Name</label></td> 
-                <td><input type="text" name="cfirst" id="c-first" placeholder="Child's FirstName" required></td>
+                <td><input type="text" name="cfirst" id="cfirst" placeholder="Child's FirstName" required></td>
             </tr>
             <tr>
                 <td><label for="age">Child's Age</label></td> 
-                <td><input type="number" name="age" value="3" required></td>
+                <td><input type="number" name="age" id="age" value="3" required></td>
             </tr>
             <tr>
                 <td><b>Date and Time</b></td>
@@ -49,15 +49,15 @@
             </tr>
             <tr>
                 <td><label for="date">Date</label></td> 
-                <td><input type="date" name="date" required></td>
+                <td><input type="date" name="date" id="date" required></td>
             </tr>
             <tr>
                 <td><label for="time">Start Time</label></td> 
-                <td><input type="time" name="time" required></td>
+                <td><input type="time" name="time" id="time" required></td>
             </tr>
             <tr>
                 <td><label for="guests">Number Of Guest</label></td> 
-                <td><input type="number" name="guests" value="5"></td>
+                <td><input type="number" name="guests" id="guests" value="5"></td>
             </tr>
             <tr>
                 <td><b>Food</b></td> 
@@ -83,9 +83,9 @@
                 <td><label for="cake">Cake</Label></td> 
                 <td>
                     <select name="cake">
-                        <option selected>Chocolate</option>
-                        <option >Vanilla</option>
-                        <option>I'll bring my own</option>
+                        <option value="choc" selected>Chocolate</option>
+                        <option value="vanilla">Vanilla</option>
+                        <option value="own">I'll bring my own</option>
                     </select>
                 </td>
             </tr>
@@ -95,11 +95,11 @@
             </tr>
             <tr>
                 <td><label for="colors">Color Scheme</Label></td> 
-                <td><input type="color" name="colors"></td>
+                <td><input type="color" name="colors" id="colors"></td>
             </tr>
             <tr>
                 <td><label for="comments">Additional Comments</Label></td> 
-                <td><textarea name="comments" placeholder="Please add any additional comments"></textarea></td>
+                <td><textarea name="comments" id="comments" placeholder="Please add any additional comments"></textarea></td>
             </tr>
             <tr>
                 <td></td> 
