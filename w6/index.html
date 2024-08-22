@@ -29,11 +29,11 @@
                 
 
                 var gross = hoursWorked * hourPay
-                console.log(`gross`)
+                console.log(`Gross $${gross.toFixed(2)}`)
                 var taxA = gross * taxRate
-                console.log(`taxA`)
+                console.log(`taxA $${taxA.toFixed(2)}`)
                 var net = gross - taxA
-                console.log(`net`)
+                console.log(`net $${net.toFixed(2)}`)
 
                 alert(`GrossPay $${gross.toFixed(2)}\n Uncle Sam's Share: $${taxA.toFixed(2)}\n Net Pay: $${net.toFixed(2)} `)
 
