@@ -17,19 +17,20 @@
     <!--Include html elements-->
         <div id="Header">
             <h1>Week 6 Intro Demo | Javascript</h1>
+
+           
         </div>
         <div id="main-content">
             <script>
-                //Single line comment
-                
-                //variables , requres DECLARTION: 'var'
-                var num1 = 10
-                var num2 = 27
+                var hourPay = Number(prompt(`Enter the hourly pay: `))
+                var hoursWorked = Number(prompt(`Enter the hours worked: `))
+                var taxRate = 0.20
+                var taxA = gross * taxRate
 
-                var sum = num1 + num2
+                var gross = hoursWorked * hourPay
 
-                //Console.log() Method -- Used for development not for a user.
-                console.log(sum)
+                alert(`GrossPay ${gross}`)
+                alert(`Uncle Sam's Share: ${taxA}`)
 
 
             </script>
