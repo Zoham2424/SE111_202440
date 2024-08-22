@@ -22,15 +22,20 @@
         </div>
         <div id="main-content">
             <script>
+                //variables
                 var hourPay = Number(prompt(`Enter the hourly pay: `))
                 var hoursWorked = Number(prompt(`Enter the hours worked: `))
                 var taxRate = 0.20
-                var taxA = gross * taxRate
+                
 
                 var gross = hoursWorked * hourPay
+                console.log(`gross`)
+                var taxA = gross * taxRate
+                console.log(`taxA`)
+                var net = gross - taxA
+                console.log(`net`)
 
-                alert(`GrossPay ${gross}`)
-                alert(`Uncle Sam's Share: ${taxA}`)
+                alert(`GrossPay $${gross.toFixed(2)}\n Uncle Sam's Share: $${taxA.toFixed(2)}\n Net Pay: $${net.toFixed(2)} `)
 
 
             </script>
