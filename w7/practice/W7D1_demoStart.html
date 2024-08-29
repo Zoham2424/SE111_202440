@@ -161,11 +161,55 @@
             }
             
             var hello = document.querySelector(`#hello`)
-             
+
+            hello.innerHTML += `${fname} !`
+
+            //document.querySelector(`#hello`).innerHTML += `${fname} !`
+
+            //store the #info div to a variable
+
+            var info = document.querySelector(`#info`)
+            //calculate dog years
+             var dog_age = (age * 7).toFixed(1)
+
+             //test
+
+             console.log(`YOUR AGE: ${age} human years; Dog years${dog_age} dog years`)
+
+             //add the age messages to the #info div as content
+
+             info.innerHTML += `<p><b> YOUR AGE:</b> ${age} human years; <br> <b> Dog years${dog_age} dog years </b>`
 
         } //close alertInfo
 
+        //globar variables: the ones declared below will only be accessible to the functions After they have bene delcared
 
+        var me = document.querySelector(`#me`)
+        var you = document.querySelector(`#you`)
+
+        me.addEventListener(`click`, clicked)
+        you.addEventListener(`click`, clickedG)
+
+        function clicked(event)
+        {
+            console.log(`clicked() reached!`)
+            me.style.color = `red`
+            me.style.fontSize = `40px`
+        }
+        function clickedG(event)
+        {
+            console.log(`clickedG() reached!`)
+            you.style.color = `green`
+            you.style.fontSize = `40px`
+        }
+
+        var button = document.querySelector(`#submit`)
+
+        button.addEventListener(`click`,function(event)
+        {
+            console.log(event)
+        }
+        )
 
 	</script>
 	
