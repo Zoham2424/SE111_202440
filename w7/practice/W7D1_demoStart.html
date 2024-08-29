@@ -104,6 +104,69 @@
     <p>end</p>
     <!--IN-DOCUMENT JAVASCRIPT BELOW-->
     <script>
+
+        //we write js in here
+
+        //selecting elements from the html document.
+        //globl variable
+
+        var body = document.querySelector(`body`)
+
+        console.log(body)
+
+        //create a new variable to hold the new html element
+
+        var newP = ``
+        newP += `<h2>` 
+        newP += `hello world! this content was added to the page with <i>Javascript</i>`
+        newP += `<h2>`
+
+        console.log(newP)
+
+        //add the new html element to the page - this will add to the end of he body
+
+        body.innerHTML += newP 
+        //body.style.color = `blue` // information color
+
+        //set up an actionable event so that when a button is clicked, info is written to the page
+        //first: add event listener for event to the element
+        //adding an event listener to the #enter-button at the end of the mini form
+        document.querySelector(`#enter-button`).addEventListener(`click`, alertInfo)
+        //^^.addEventListener(EVENT TYPE, FUNCTION THAT RUNS ONCE EVENT)
+
+        //event based functions must include the event parameter (e/ev/event)
+        //alertInfo() definition below
+
+        function alertInfo(event)
+        {
+            //local variables :vars 
+            var fname = document.querySelector(`#first`).value
+           // console.log(fname)
+
+            var last = document.querySelector(`#last`).value
+            //console.log(last)
+            var age = Number(document.querySelector(`#age`).value)  //number to do math
+            //console.log(age)
+
+            console.log(fname,last,age)
+
+
+            //basic control flow for an age alert
+            if(age >= 18){
+                alert(`You are old enough to vote!`)
+
+            }
+            else{
+                alert(`You are nt old enough to vote!`)
+            }
+            
+            var hello = document.querySelector(`#hello`)
+             
+
+        } //close alertInfo
+
+
+
 	</script>
 	
 </body>
