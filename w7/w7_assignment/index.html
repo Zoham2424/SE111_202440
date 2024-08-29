@@ -42,7 +42,7 @@
 
 
         <!-- give the button below (that is the only form element without a label) an id of "enter-button"-->
-        <input type="button" id="submit" value="Enter">
+        <input type="button" id="enter-button" value="Enter">
 
         <br>
         <br>
@@ -68,7 +68,7 @@
 
     <script>
         //edit the below statement to select the #enter-button id from the HTML file
-        document.querySelector().addEventListener(`click`, alertName)
+        document.querySelector(`#enter-button`).addEventListener(`click`, alertName)
         
         
 
@@ -86,9 +86,9 @@
 
             var last = document.querySelector(`#last`).value
             //console.log(last)
-            var hours = Number(document.querySelector(`#hours`).value)  //number to do math
+            var hours = document.querySelector(`#hours`).value  //number to do math
             //console.log(age)
-            var rate = Number(document.querySelector(`#rate`).value)
+            var rate = document.querySelector(`#rate`).value
 
             console.log(fname,last,hours, rate)
 
@@ -101,7 +101,7 @@
             console.log(rate)
 
             //add the first and last name values together and store into a new variable called 'full' holding the user's full name
-            var full = fname + last
+            var full = `${fname} + ${last}`
 
             //console.log() the full name value
             console.log(full)
@@ -109,6 +109,9 @@
 
             //convert both hours and rate to Number() data types
             
+            hours = Number(hours)
+
+            rate = Number(rate)
 
 
             //NOTE: DO NOT MOVE ON UNTIL YOU ARE ABLE TO DISPLAY THE CORRECT VALUES! This is a practice in testing as you build! 
@@ -118,11 +121,11 @@
 
             var rate = 0.20
 
-            var gross = hoursWorked * hourPay
+            var gross = hours * rate
     
-            var taxAmount = gross * taxRate
+            var taxAmount = gross * rate
  
-            var net = gross - taxA
+            var net = gross - taxAmount
     
 
             //console.log() all three processed values, rounded to the second decimal place
@@ -130,14 +133,14 @@
 
 
             //create a new variable called 'finalMessage' that holds the literal string value of the following, each value on a new line (use <br>): full name, hours worked*, hourly rate*   *--> rounded to the second decimal place 
-            var finalMessage =  document.querySelector(`finalMessage`)
+            var finalMessage = document.querySelector(`#finalMessage`)
 
-            finalMessage.innerHTML += `${full.toFixed(2)}, <br>${hours.toFixed(2)}, <br> ${rate.toFixed(2)}!`
+            finalMessage.innerHTML += `${full}`
 
         
             //create a new var called 'info' and store the entire #info *HTML element* to it
 
-            var info = document.querySelector(info)
+            var info = document.querySelector(`#info`)
 
 
             //create a new var called 'num' and store the entire #check *HTML element* to it
@@ -146,9 +149,7 @@
 
             //edit the innerHTML of the #info element (now the 'info' js var) to hold the value of 'finalMessage'
 
-            info.innerHTML += finalMessage
-
-
+            info.innerHTML = finalMessage
 
             //edit the innerHTML of the #check element (now the 'check' js var) to hold a literal string with the following values: gross pay, tax amount, net pay. All three values should be rounded to the second decimal place.  Use <br> to break onto a new line for each value
 
@@ -156,7 +157,7 @@
 
             //add a 'click' event listener to the #submit HTML element (HINT: this is the first step in the <script> )
             //when the #submit button is clicked, the submitNow function should run
-            document.querySelector().addEventListener(`click`, submitNow)
+            document.querySelector(`#submit`).addEventListener(`click`, submitNow)
         
             function submitNow(e)
             {
