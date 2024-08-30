@@ -101,7 +101,7 @@
             console.log(rate)
 
             //add the first and last name values together and store into a new variable called 'full' holding the user's full name
-            var full = `${fname} + ${last}`
+            var full = `${fname} ${last}`
 
             //console.log() the full name value
             console.log(full)
@@ -133,11 +133,12 @@
 
 
             //create a new variable called 'finalMessage' that holds the literal string value of the following, each value on a new line (use <br>): full name, hours worked*, hourly rate*   *--> rounded to the second decimal place 
-            var finalMessage = document.querySelector(`#finalMessage`)
-
-            finalMessage.innerHTML += `${full}`
-
-        
+            var finalMessage = `
+                 Full Name: ${full}<br>
+                Hours Worked: ${hours.toFixed(2)}<br>
+                Hourly Rate: $${rate.toFixed(2)}
+                `;
+     
             //create a new var called 'info' and store the entire #info *HTML element* to it
 
             var info = document.querySelector(`#info`)
@@ -153,7 +154,7 @@
 
             //edit the innerHTML of the #check element (now the 'check' js var) to hold a literal string with the following values: gross pay, tax amount, net pay. All three values should be rounded to the second decimal place.  Use <br> to break onto a new line for each value
 
-            check.innerHTML = `${full.toFixed(2)}, <br>${hours.toFixed(2)}, <br> ${rate.toFixed(2)}!`
+            check.innerHTML = `${full}, <br>${hours.toFixed(2)}, <br> ${rate.toFixed(2)}!`
 
             //add a 'click' event listener to the #submit HTML element (HINT: this is the first step in the <script> )
             //when the #submit button is clicked, the submitNow function should run
