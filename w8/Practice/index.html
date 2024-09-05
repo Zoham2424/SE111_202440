@@ -126,13 +126,13 @@
         ]
         //****************************************************************************************************
         //empty string for writing the content to html
-        var partoutput = ``                     // ""
+        var partyOutput = ``                     // ""
 
         //process the outter/main structuer [standar array]
         for(let i = 0; i < party.length; i++)
         {
             //this loop controls which array value {object} we are looking at
-            partoutput += `<h3>Party Member #${i}: ${party[i].name}</h3>`
+            partyOutput += `<h3>Party Member #${i}: ${party[i].name}</h3>`
             party[i].greeting()
 
             for(let key in party[i])
@@ -144,7 +144,7 @@
         }
 
         //write the info to the HTML
-        document.querySelector(`#output`).innerHTML += partoutput
+        document.querySelector(`#output`).innerHTML += partyOutput
 
     </script>   <!--End of script-->
 </body>
