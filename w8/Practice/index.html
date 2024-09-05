@@ -81,7 +81,70 @@
 
     //Adding content to the HTML Page
 
-        
+        //first select and store the element which will hold the intented content
+        var output = document.querySelector(`#output`)
+
+        //process thru the array to add each item to the page
+        for(let i = 0; i < people.length; i++)      //goes thru entire array
+        {
+            output.innerHTML +=  `<p>${i}\n${people[i]}'s favorite color is ${color[i]}</p>`
+            output.innerHTML +=  `<p>${people[i]} is ${age[i]} years old</p>`
+        }
+
+        //objects
+        //Objects can handle MIXED DATA TYPES
+
+        var Seranna = {
+            race: "Haft-ELF",
+            classtype: "Warlock",
+            lvl: 5,
+            familiar: {ftype: "seudodragon", name: "Viktor", hp:20},
+            hp: 33,
+            ac: 19,
+            items: ["amulet", "book", "cloak", "scholar's pack"],
+            greeting: function() {alert(`Hello there ${this.name}~`)}
+        }
+        var Lolli = {
+            name: "Lolli",
+            race: "Tabaxi",
+            classtype: "Monk",
+            lvl: 7,
+            familiar: {},
+            hp: 33,
+            ac: 15,
+            items: ["claw file", "staff", "cloak", "dungeoner's pack"],
+            greeting: function() {alert(`Hello there ${this.name}~`)}
+        }
+
+        Seranna.greeting() // call seranna funtion greeting
+
+        //lets put it togetter
+
+        var party = [
+            Seranna,
+            Lolli
+        ]
+        //****************************************************************************************************
+        //empty string for writing the content to html
+        var partoutput = ``                     // ""
+
+        //process the outter/main structuer [standar array]
+        for(let i = 0; i < party.length; i++)
+        {
+            //this loop controls which array value {object} we are looking at
+            partoutput += `<h3>Party Member #${i}: ${party[i].name}</h3>`
+            party[i].greeting()
+
+            for(let key in party[i])
+            {
+                //this loop goes thruo the indivial objects at each position in the array; it will loop throug every key
+                partyOutput += `<p><b>${key}: </b> ${party[i][key]}</p>`
+            }
+            partyOutput += `<hr>`
+        }
+
+        //write the info to the HTML
+        document.querySelector(`#output`).innerHTML += partoutput
 
     </script>   <!--End of script-->
 </body>
