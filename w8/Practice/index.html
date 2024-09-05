@@ -9,6 +9,80 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!--Html content-->
+
+        <h1>W8 Javascript Demo | Arrays & Objects</h1>
+
+        <div id="output">
+            <!---->
+        </div>
+
+
+    <!--Js Script-->
+    <script>
+
+
+    //basic key + value pair
+    var name = `Ian`
+        console.log(`Variable: ${name}`)
+    //arrays
+    //key --> [Index] or [i]
+
+    var people = [ 
+            `Katie`,
+            `Ace`,
+            `Ian`
+            ]
+
+    console.log(`Array: ${people}`)   //Entire thing
+    //*****************************************************************************************************
+    console.log(`Array: ${people[0]}`) // specific one 
+    //*****************************************************************************************************
+    console.log(`Array: ${people.length}`) //See how mani people are in the array
+    //*****************************************************************************************************
+    console.log(`Array: ${people[people.length -1 ]}`) //last person in the array
+    //***************************************************************************************************
+    people[people.length] = `Jose` // 
+    console.log(`Array: ${people}`) // new information added, full information
+    //**************************************************************************************************
+    people.push(`Cullen`) // native property
+    console.log(`Array: ${people}`)// new information added, full information
+    //****************************************************************************************************
+    people.push(prompt`Enter information: `) //ask information to the user
+    console.log(`Array: ${people}`)
+    //****************************************************************************************************
+    //****************************************************************************************************
+    //****************************************************************************************************
+    //parallel arrays
+        var color = [
+            `grey`,
+            `blue`,
+            `black`,
+            `green`,
+            `purple`
+        ]
+
+
+    //Processing Arrays
+    var age = []
+    //"process" & "data structure" --> FOR LOOP!
+        for(let i = 0; i < people.length; i++)
+        {
+            console.log(`INDEX: ${i}\n${people[i]}'s favorite color is ${color[i]}`)        //applys information to the other array
+            age.push(
+                prompt(`How old is ${people[i]}:`)  // starts asking for people arrays information
+            )
+        }
+        for(let i = 0; i < people.length; i++)      //goes thru entire array
+        {
+            console.log(`${people[i]} is ${age[i]} years old`)  //output information to the user telling 
+        }
+
+
+    //Adding content to the HTML Page
+
+        
+
+    </script>   <!--End of script-->
 </body>
 </html>
