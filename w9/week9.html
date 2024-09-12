@@ -24,7 +24,7 @@
 	]
 
 
-	var first = document.querySelector(`body`)
+	var body = document.querySelector(`body`)
 	console.log(body)   //see the actual HTMl element and its children (contents)
     console.dir(body)
 
@@ -32,8 +32,10 @@
         {
             //for every object stored to the arry, add a div to the body element to hold object's info(values)
 
+
             //create the element - this step alone does NOT write it to the page
             var tempDiv = document.createElement(`div`)
+
 
             //add an id and class attribute to the new div element
             //.setAttribute() adds attributes to elements; provide with attribute type & attribute value
@@ -51,6 +53,7 @@
                 //create the text node to add to the paragraph tag
                 var text = document.createTextNode(people[i][key])
 
+
                 //add the the text (append) to the paragraph element
                 p.appendChild(text)
                 
@@ -60,12 +63,19 @@
 
             } 
 
+
+
+
             //add the tempDiv back to the body element
             body.appendChild(tempDiv)
 
+
+
+
             //border instead of red
         }
-
-</script>
-
+            
+    </script>
+    
+</body>
 </html>
