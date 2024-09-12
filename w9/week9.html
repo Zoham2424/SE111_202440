@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Week 2 Files</title>
+<title>Week 9 Files</title>
 <style type="text/css">
 	.border{border:1px solid black;}
 </style>
@@ -24,19 +24,47 @@
 	]
 
 
-	var first = document.querySelector(`#body`)
-	for(let i=0; i < people.length-1; i++){
-			var tempDiv = document.createElement(`div`);
-			tempDiv.setAttribute("id", String(i)).setAttribute(`class`, `border`)
-			for(key in people[i]){
-				var p = document.createElement(`p`)
-				var text = document.createTextNode(`#first`, `#last`, `#credit`)
-				text.appendChild(`p`)
-			}
-			p.appendChild(`div`)
+	var first = document.querySelector(`body`)
+	console.log(body)   //see the actual HTMl element and its children (contents)
+    console.dir(body)
 
-			
-	}
+	for(let i = 0; i < people.length; i++)
+        {
+            //for every object stored to the arry, add a div to the body element to hold object's info(values)
+
+            //create the element - this step alone does NOT write it to the page
+            var tempDiv = document.createElement(`div`)
+
+            //add an id and class attribute to the new div element
+            //.setAttribute() adds attributes to elements; provide with attribute type & attribute value
+            tempDiv.setAttribute(`id` , people[i].first)
+            tempDiv.setAttribute(`class`, `border`)
+
+
+            //for every property of the object--> for key in object loop
+            for(key in people[i]) //for each key (property) in the current object
+            {
+                //create the element to hold the property value
+                var p = document.createElement(`p`)
+
+
+                //create the text node to add to the paragraph tag
+                var text = document.createTextNode(people[i][key])
+
+                //add the the text (append) to the paragraph element
+                p.appendChild(text)
+                
+                //add the paragraph (append) element to the div!
+                tempDiv.appendChild(p)
+
+
+            } 
+
+            //add the tempDiv back to the body element
+            body.appendChild(tempDiv)
+
+            //border instead of red
+        }
 
 </script>
 
